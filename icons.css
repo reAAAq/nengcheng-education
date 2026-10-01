@@ -1,0 +1,86 @@
+/* One SVG language for every decorative marker, arrow and service pictogram. */
+.icon { stroke-width:1.7; }
+.inline-icon { display:inline-block;width:18px;height:18px;vertical-align:-.2em;flex-shrink:0; }
+.icon-label { display:inline-flex;align-items:center;gap:7px; }
+.meta-points { display:inline-flex;align-items:center;gap:7px 16px;flex-wrap:wrap; }
+.meta-points>span { display:inline-flex;align-items:center;gap:6px; }
+.meta-points .inline-icon { width:15px;height:15px; }
+.footer-service-icons { display:inline-flex;gap:15px;flex-wrap:wrap; }
+.footer-service-icons>span { display:inline-flex;align-items:center;gap:6px; }
+.footer-service-icons .inline-icon { width:14px;height:14px; }
+.welcome-badge { gap:8px; }
+.welcome-badge>.inline-icon { width:16px;height:16px; }
+.welcome-cities { flex-wrap:wrap;gap:13px;letter-spacing:.03em; }
+.welcome-cities>.inline-icon { width:20px;height:20px;color:#6a9acf; }
+.welcome-cities .icon-label>.inline-icon { width:19px;height:19px; }
+.welcome-description .meta-points { font-size:.86rem;gap:6px 14px; }
+.welcome-description>.meta-points+br { display:none; }
+.welcome-description>.meta-points { display:flex;margin-bottom:7px; }
+.welcome-prices p { display:flex;align-items:baseline;gap:3px;flex-wrap:wrap;white-space:normal; }
+.price-icon { width:18px;height:18px;align-self:center; }
+.welcome-prices strong { margin-left:0; }
+.welcome-prices small { margin-left:3px; }
+.pill-button>.inline-icon { width:20px;height:20px; }
+.secondary-link>.inline-icon { width:17px;height:17px; }
+.section-bottom-link a { display:inline-flex;align-items:center;gap:13px; }
+.journey-step>.inline-icon { width:26px;height:26px; }
+.journey-keyword .meta-points { gap:6px 15px; }
+.service-aside .meta-points { gap:8px 12px;letter-spacing:0; }
+.service-aside .meta-points .inline-icon { width:14px;height:14px; }
+.package-card>p .meta-points { gap:4px 8px; }
+.package-card>p .meta-points .inline-icon { width:13px;height:13px; }
+.package-card>a { display:inline-flex;align-items:center;gap:8px; }
+.package-card>a .inline-icon { width:15px;height:15px; }
+.package-price .price-icon { width:17px;height:17px; }
+.offers-strip b { white-space:nowrap; }
+.offers-strip b .inline-icon { width:14px;height:14px;margin-right:3px; }
+.offers-strip>a { display:inline-flex;align-items:center;gap:7px; }
+.center-heading .meta-points { justify-content:center; }
+.breadcrumb>.inline-icon { width:14px;height:14px; }
+.menu-toggle { align-items:center; }
+.menu-toggle .inline-icon { width:23px;height:23px;margin:0; }
+.menu-toggle .menu-close { display:none; }
+.menu-toggle[aria-expanded="true"] .menu-open { display:none; }
+.menu-toggle[aria-expanded="true"] .menu-close { display:block; }
+@media(max-width:650px) {
+ .welcome-prices { gap:15px; }
+ .welcome-prices>div+div { padding-left:15px; }
+ .welcome-prices p { gap:2px; }
+ .welcome-prices .price-icon { width:15px;height:15px; }
+ .welcome-prices strong { font-size:1.58rem; }
+ .welcome-prices small { margin-left:2px;font-size:.55rem; }
+ .welcome-description .meta-points { display:grid;grid-template-columns:max-content max-content;gap:3px 15px;font-size:.76rem; }
+ .welcome-description .meta-points .inline-icon { width:14px;height:14px; }
+ .welcome-cities { gap:10px;font-size:.92rem; }
+ .welcome-cities .inline-icon { width:16px;height:16px; }
+ .welcome-badge { font-size:.64rem;padding-left:10px;gap:6px; }
+ .welcome-badge>span { font-size:.57rem; }
+ .center-heading .meta-points { gap:6px 13px;font-size:.7rem; }
+ .footer-service-icons { gap:9px 13px; }
+}
+/* Corrected packages follow the supplied one-month, three-month, annual and TOEFL posters. */
+.package-points { list-style:none;margin:15px 0 0;padding:0;display:flex;flex-direction:column;gap:9px; }
+.package-points li { display:flex;align-items:flex-start;gap:8px;font-size:.75rem;line-height:1.8;color:#6c8298; }
+.package-points li>.inline-icon { width:15px;height:15px;color:#86a8c7;margin-top:3px; }
+.package-actions { display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:5px; }
+.package-actions>a { display:inline-flex;align-items:center;gap:7px;font-size:.73rem;color:#4c81c5;border:1px solid #94b8e4;padding:4px 12px;border-radius:19px;margin-left:auto; }
+.package-actions>a .icon { width:15px;height:15px; }
+.package-actions>a:hover { color:#fff;background:#3979df;border-color:#3979df; }
+.package-source { display:inline-flex;align-items:center;gap:4px;background:transparent;color:#7590ac;font-size:.66rem;padding:5px 0; }
+.package-source .icon { width:14px;height:14px; }
+.package-source:hover { color:#3478d9; }
+.package-card-toefl { grid-column:span 2; }
+.package-card-toefl .package-points { flex-direction:row;gap:10px 23px;flex-wrap:wrap; }
+.toefl-package-prices { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:20px;margin-bottom:14px; }
+.toefl-package-prices>div+div { border-left:1px solid #dce8f2;padding-left:20px; }
+.toefl-package-prices>div>span { font-size:.68rem;color:#7e94a9; }
+.toefl-package-prices .package-price { margin:5px 0 0; }
+@media(max-width:650px) {
+ .package-card-toefl { grid-column:auto; }
+ .package-points li { font-size:.78rem; }
+ .package-source { font-size:.72rem; }
+ .package-actions>a { font-size:.76rem;padding:5px 13px; }
+ .package-card-toefl .package-points { flex-direction:column; }
+ .toefl-package-prices { grid-template-columns:1fr;gap:14px; }
+ .toefl-package-prices>div+div { border-left:0;padding:13px 0 0;border-top:1px solid #dce8f2; }
+}

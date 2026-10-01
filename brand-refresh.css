@@ -134,9 +134,6 @@
 .page-home .contact-grid h2 { line-height:1.6; }
 .page-home .contact-channels { gap:20px; }
 .page-home .contact-channels>div { padding:15px 0; }
-.page-tour .button { border-radius:25px; }
-.page-tour .expedition-hero { background:linear-gradient(120deg,#e7f6fd,#e3f5eb); }
-.page-tour .breadcrumb { color:#8193a7; }
 @media(min-width:1600px) {
  .welcome-art { width:72%;object-position:center 58%; }
  .welcome-inner { min-height:680px; }
@@ -318,20 +315,3 @@
  .package-grid { padding:12px; }
 }
 @media(prefers-reduced-motion:reduce) { .pill-button { transition:none; } }
-/* The itinerary retains its linear structure and gets matching light hero colours. */
-.page-tour .expedition-hero { color:#193956; }
-.page-tour .expedition-hero .eyebrow { color:#5480b0; }
-.page-tour .expedition-heading h1>span { color:#5d788b; }
-.page-tour .tour-city-pair { border-color:#bdd6de; }
-.page-tour .tour-city-pair>span,.page-tour .tour-city-pair small { color:#688598; }
-.page-tour .tour-quotes { border-color:#c5dceb;border-radius:10px;background:#fff; }
-.page-tour .tour-quote-featured { background:#e6f0fd;border-color:#c5dceb; }
-.page-tour .tour-quote>span,.page-tour .tour-quote small { color:#627f95; }
-.page-tour .tour-quote>p,.page-tour .tour-quote-featured strong { color:#3477c5; }
-.page-tour .tour-quote em { color:#6b8395; }
-.page-tour .expedition-intro p { color:#5c768a; }
-.page-tour .expedition-facts { border-color:#bed4dd; }
-.page-tour .expedition-facts>span { color:#6b8292; }
-.page-tour .expedition-facts b { color:#30577a; }
-.page-tour .expedition-note { color:#6b8292; }
-.page-tour .tour-quote:not(.tour-quote-featured) { background:#fff; }

@@ -65,7 +65,7 @@
       field.textContent = item[field.dataset.scoreField];
     });
     const label = '成绩案例 ' + item.id;
-    const caption = label + ' · 总分' + item.overall + '，听力' + item.listening + '、阅读' + item.reading + '、写作' + item.writing + '、口语' + item.speaking;
+    const caption = label + '，总分' + item.overall + '，听力' + item.listening + '、阅读' + item.reading + '、写作' + item.writing + '、口语' + item.speaking;
     const trigger = card.querySelector('.image-trigger');
     const preview = trigger.querySelector('img');
     preview.src = item.image;

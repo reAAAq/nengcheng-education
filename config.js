@@ -1,7 +1,9 @@
 /* 统一维护全站参考报价、优惠金额和咨询方式。 */
 window.NENGCHENG_CONFIG = {
   referencePrice: 15000,
-  ieltsQuestionBank: 25000,
+  ieltsMonth: 6000,
+  ieltsQuarter: 25000,
+  ieltsYear: 50000,
   toeflDomestic: 100000,
   toeflOverseas: 80000,
   tourWithoutAirfare: 12800,
