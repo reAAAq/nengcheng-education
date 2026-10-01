@@ -1,10 +1,10 @@
 # 能成国际教育官网
 
-原生 HTML、CSS、JavaScript 静态官网，无构建步骤、后台、外部字体或第三方接口。首页展示机构品牌、语言与留学服务简介及重点考团推荐，考团详情独立呈现。通过 GitHub Pages 从 `main` 分支根目录自动部署。
+原生 HTML、CSS、JavaScript 静态官网，无构建步骤、后台、外部字体或第三方接口。首页以境外雅思考团为视觉中心，下方展示六项服务套餐、匿名成绩与机构介绍，考团详情独立呈现。通过 GitHub Pages 从 `main` 分支根目录自动部署。
 
 ## 页面
 
-- `index.html`：品牌首页、考团推荐、语言与留学服务、成绩展示、机构介绍、咨询区。
+- `index.html`：考团主视觉、赴考服务概览、六项服务套餐及分类筛选、成绩平铺、机构介绍、咨询区。
 - `exam-tours.html`：河内／曼谷境外雅思考团，双档报价与一条向下延伸的八阶段服务流程，住宿与考点照片嵌入对应节点。
 
 语言学习、留学申请的独立页面已删除，导航与页脚对应入口已移除。首页保留这两项服务简介，其咨询链接直接跳转至首页咨询区。
@@ -31,11 +31,14 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 ## 修改内容
 
-`styles.css` 控制全站视觉和响应式排版，`tour.css` 单独控制考团页的报价、箭头和照片节点；`script.js` 控制手机导航、成绩卡片数据与图片弹层。`config.js` 集中配置：
+`styles.css` 提供基础样式，`brand-refresh.css` 实现本次浅蓝／薄荷绿官网风格及首页响应式布局；`tour.css` 控制考团页的报价、箭头和照片节点。`script.js` 控制手机导航、成绩卡片数据与图片弹层，`home.js` 控制服务分类筛选。筛选按钮支持原生键盘操作，筛选结果通过实时区域告知读屏；禁用 JavaScript 时直接显示全部六项服务。`config.js` 集中配置：
 
 ```js
 window.NENGCHENG_CONFIG = {
   referencePrice: 15000,
+  ieltsQuestionBank: 25000,
+  toeflDomestic: 100000,
+  toeflOverseas: 80000,
   tourWithoutAirfare: 12800,
   bundleDiscount: 2000,
   existingBankDiscount: 4000,
@@ -65,9 +68,11 @@ window.NENGCHENG_CONFIG = {
 
 N 标识通过 CSS 展示 `assets/brand-source.png` 中的原始品牌图案。成绩截图、住宿和考点图片来自用户素材。考团页保留一张双床客房照片，加入两张考点照片，均标注环境参考，不绑定到某个城市或具体团期，也未声称是机构自有场地。考点照片完整保留原有来源标识，放大按钮置于右上角，避免遮挡右下角来源文字。
 
-首页 `assets/campus-hero.png` 为本次通过图像生成技能制作的校园主题品牌视觉，不代表真实学员、机构校区或合作大学。生成简报：
+首页使用两张内置 Image Generate 生成的原创 3D 插画：`assets/tour-hero-v2.png`（纸飞机伙伴与曼谷／河内目的地）和 `assets/study-companion-v1.png`（语言学习主题透明背景）。它们用于品牌创意视觉，不代表真实学员或考点。完整生成提示词保存在 `IMAGE-PROMPTS.txt`。旧版校园图片 `assets/campus-hero.png` 保留作版本素材，当前页面不再引用。
 
-> Premium editorial photography. Two East Asian young adult students on the right side of a generic university campus, warm afternoon light, dark navy, natural green and warm stone. Quiet left side for text overlay. No identifiable university, text or logos.
+本次视觉参考 [新东方国际教育落地页](https://liuxue.xdf.cn/sem/code/xytd/) 的浅色渐变、3D 插画、大标题、居中章节标题和分类套餐布局；保留能成自己的品牌、联系方式和业务信息，未复制参考站的学员案例、顾问信息、授权荣誉或业务数据。
+
+服务体系列出六项：境外雅思考团、雅思题库套餐、托福国内面授、托福境外面授、语言学习服务、多国留学申请。题库 ¥25,000 依据用户的“已购 2.5w 题库”文案；托福国内 ¥100,000、境外 ¥80,000 依据用户托福面授海报。未自行补充课时、课期或保证分数。用户尚未补充其他套餐资料，当前以这些已有材料排版。
 
 机构成立时间采用主介绍素材中的 2012 年；境外考团业务 2013 年起步的表述来自最新提供的业务文案。考团报价不含机票为 ¥12,800／人，含往返机票为 ¥15,000／人，机票随行情浮动，10 人成团，每月固定考期。新增服务与优惠均根据用户最新文案整理，具体日期、酒店、师资、优惠适用口径和陪同费用按团期确认。未使用“境外天然涨分”“大概率遇到培训考官”“安全与出分双保障”等结果保证，也未将师资描述为已经核实的现役考官；改为口语专项培训及按团期确认的师资安排。
 
@@ -89,7 +94,7 @@ N 标识通过 CSS 展示 `assets/brand-source.png` 中的原始品牌图案。�
 
 ## 官方考试标识与成绩平铺
 
-首页语言学习卡片使用官方矢量标识，原始图形与颜色保持不变，文件本地存储以支持离线打开：
+首页雅思题库和托福面授卡片使用官方矢量标识，原始图形与颜色保持不变，文件本地存储以支持离线打开：
 
 - `assets/ielts-logo.svg`：从 [IELTS 官网](https://ielts.org/) 导航内嵌 SVG 的 `prefix__sprite-ielts-logo-white` 提取，白色官方版本置于深蓝背景。
 - `assets/toefl-logo.svg`：[ETS 官网 TOEFL 标识文件](https://www.ets.org/content/dam/ets-org/Rebrand/Logos/toefl-logo-periwinkle.svg)，与 [TOEFL 官网页面](https://www.ets.org/toefl.html) 的品牌标识配置一致。

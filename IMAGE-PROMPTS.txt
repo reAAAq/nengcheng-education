@@ -1,0 +1,16 @@
+AI visual assets — Nengcheng Education
+Generated with the built-in image_gen tool on 2026-10-01.
+These are creative illustrations, not documentary photographs or representations of actual students.
+
+Asset 1: assets/tour-hero-v2.png
+Original: /Users/summer/.codex/generated_images/01a0f1b5-7c99-7f23-88f8-86f5b754b1b5/exec-295ede06-60ca-40fe-8b87-59856092a7ee.png
+Transparent background: false
+Final prompt:
+Create one polished premium 3D illustration for the hero of a Chinese international education / overseas IELTS exam tour website. Landscape 1536x1024. No text, no lettering, no logos, no watermark. An ORIGINAL friendly blue-and-white paper-airplane-shaped mascot with simple cute expressive eyes, tiny orange travel backpack, standing beside a rounded cornflower-blue rolling suitcase and a cream passport/booklet. Main focus in center-right. Surround with a whimsical miniature travel destination scene: recognizable golden Wat Arun style Thai spires on one side and Hanoi Turtle Tower and leafy lake on the other, small aircraft in sky, soft clouds, a few floating study cards with abstract lines only, small orange compass accents. Premium clay / soft plastic 3D rendering, beautifully crafted, clean soft shadows, rounded tactile forms, airy uplifting academic-travel mood. Pale sky blue and mint green background melting softly toward white at edges, generous breathable whitespace on left third. Palette mostly cornflower blue, mint, white, warm cream with restrained orange. Not a photograph, not generic cartoon clipart, not crowded, not new oriental mascot. Camera slightly elevated front three-quarter. Cohesive premium commercial website illustration.
+
+Asset 2: assets/study-companion-v1.png
+Original: /Users/summer/.codex/generated_images/01a0f1b5-7c99-7f23-88f8-86f5b754b1b5/exec-53a65ac3-88bc-449a-a486-c1ef78b79288.png
+Transparent background: true
+Final prompt:
+Create a single original premium 3D illustration with transparent background for the supporting services area of an international education website. A cute friendly white paper-airplane-shaped mascot with cornflower blue upper wing, big dark navy eyes, small smile, tiny orange accent, seated on two stacked cream-and-light-blue books. It wears a blue headset with microphone, holds an open blank study book, and next to it sits a small blue globe with pale mint continents and a miniature graduation cap. Three floating rounded cream study cards with simple blue abstract line symbols, no lettering. Soft clay and satin plastic 3D rendering, finely crafted forms and delicate shadows, calm premium educational mood. Symmetric balanced compact composition, entire objects fully visible with ample transparent margin, no backdrop, no floor, no text, no watermark, no logos. Palette white, cornflower blue, pale mint, cream, restrained orange. Landscape composition approximately 4:3.
+
