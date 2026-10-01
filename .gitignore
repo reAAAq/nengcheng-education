@@ -1,0 +1,10 @@
+# Local review artifacts and archives
+.qa/
+.DS_Store
+*.zip
+
+# Unused original materials, retained locally
+assets/tour-poster.jpg
+assets/hotel-room.jpg
+assets/hotel-evening.jpg
+assets/hotel-bathroom.jpg
