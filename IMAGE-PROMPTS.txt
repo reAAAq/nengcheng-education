@@ -1,5 +1,5 @@
 AI visual assets — Nengcheng Education
-Generated with the built-in image_gen tool on 2026-10-01.
+Generated with the built-in image_gen tool on 2026-10-01 and 2026-10-02.
 These are creative illustrations, not documentary photographs or representations of actual students.
 
 Asset 1: assets/tour-hero-v2.png
@@ -27,3 +27,13 @@ Reference: assets/tour-hero-v2.png
 Transparent background: false
 Final prompt:
 Use case: stylized-concept. Create a NEW wide 3D illustration for the arrival / airport pickup step of an overseas exam tour website. Use attached image only as character identity and style reference: same adorable white paper-airplane-headed mascot, blue upper wing, dark navy eyes, small white body and white-blue sneakers, small orange backpack. Scene: mascot stepping out of a simplified airy airport terminal while waving, blue rolling suitcase next to it, a small premium light-blue airport shuttle minibus waiting nearby; cream curb, mint shrubs, a small pale-blue passenger plane visible through terminal windows. No actual brand, no airport name, no text, no numbers, no logos, no watermark. Cohesive soft clay / satin plastic 3D commercial illustration. Dominant cornflower blue, pale mint, cream, white, subtle orange. Gentle daylight, soft shadows, very clean welcoming composition, scene fully inside frame. Landscape 3:2, eye-level slightly elevated view, enough quiet pale sky space around subjects. Background a very pale mint-to-sky-blue gradient. Keep a balanced medium-wide framing so bus, mascot, suitcase and airport remain recognizable when displayed in a 450 pixel wide card.
+
+
+Asset 5: assets/company-banner-v1.png
+Generated on: 2026-10-02
+Mode: built-in image_gen, reference-guided generation
+Original: /Users/summer/.codex/generated_images/01a0f1b5-7c99-7f23-88f8-86f5b754b1b5/exec-68399af9-b8fb-4300-be6c-de4e2c32a7e5.png
+Reference: user-provided company introduction poster codex-clipboard-6b379484-49d0-4a09-9afa-210df8dbdf36.jpg
+Transparent background: false
+Final prompt:
+Use case: ads-marketing. Asset type: a premium international education company's homepage banner background. Generate a NEW original image, using the attached brand introduction poster only as a reference for its navy-blue, white and subtle warm-gold palette and international globe theme. A sophisticated translucent sapphire-blue Earth globe dominates the RIGHT HALF of a panoramic composition. Fine longitude and latitude lines, restrained luminous connection points and one elegant warm-gold orbital arc suggest a connected world. At the lower right, integrate delicate glass-blue architectural silhouettes representing international university cities, including a classical university tower and contemporary city buildings. Very subtle open-book-inspired curved glass layers beneath the globe suggest education. The LEFT 48 percent must remain calm ivory-white to very pale ice-blue negative space for real webpage text, completely free of objects; transition seamlessly into the richer blue right side. Corporate, credible, elegant editorial art direction, cinematic yet restrained 3D glass rendering, beautiful soft studio daylight, realistic material depth and crisp refined detail. Panoramic 2.4:1 landscape banner composition. No text, no lettering, no logos, no numbers, no watermarks, no mascots, no human characters, no cartoon toys, no neon science-fiction look, no exam scores or certificates. This is brand artwork, not a photograph of the institution.
