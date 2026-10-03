@@ -11,26 +11,12 @@
       el.textContent = new Intl.NumberFormat('zh-CN').format(amount);
     }
   });
-  if (typeof config.phone === 'string' && config.phone.trim()) {
-    const el = document.getElementById('contact-phone');
-    const digits = config.phone.replace(/[^+\d]/g, '');
-    if (el && /\d/.test(digits)) {
-      const link = document.createElement('a');
-      link.href = 'tel:' + digits;
-      link.textContent = config.phone.trim();
-      el.replaceChildren(link);
+  // Display contact details only; this site does not collect or submit visitor data.
+  [['phone', '[data-contact-phone]'], ['email', '[data-contact-email]']].forEach(([key, selector]) => {
+    if (typeof config[key] === 'string' && config[key].trim()) {
+      document.querySelectorAll(selector).forEach(el => { el.textContent = config[key].trim(); });
     }
-  }
-  if (typeof config.email === 'string' && config.email.trim()) {
-    const el = document.getElementById('contact-email');
-    const email = config.email.trim();
-    if (el && /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
-      const link = document.createElement('a');
-      link.href = 'mailto:' + email;
-      link.textContent = email;
-      el.replaceChildren(link);
-    }
-  }
+  });
   if (Number.isInteger(config.copyrightYear)) {
     document.querySelectorAll('[data-year]').forEach(el => { el.textContent = config.copyrightYear; });
   }
