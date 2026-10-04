@@ -36,7 +36,7 @@
     nav.classList.toggle('is-open', open);
   });
   nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => closeMenu()));
-  document.addEventListener('click', event => { if (!event.target.closest('.site-header')) closeMenu(); });
+  document.addEventListener('click', event => { if (!event.target.closest('.site-header') && !nav.contains(event.target)) closeMenu(); });
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') closeMenu(true);
   });
