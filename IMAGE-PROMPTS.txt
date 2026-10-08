@@ -1,4 +1,11 @@
 AI visual assets — Nengcheng Education
+2026-10-08 update: assets/education-portal-banner-navy-champagne-v2.png
+Mode: built-in image_gen, image edit; transparent_background: false.
+Edit target: assets/education-portal-banner-v1.png
+Original output: /Users/summer/.codex/generated_images/01a0f1b5-7c99-7f23-88f8-86f5b754b1b5/exec-14233dcf-b44c-41ac-a483-eb31197c2f85.png
+Final prompt:
+Use case: style-transfer. Asset type: existing Nengcheng education website panoramic banner, 2.8:1 landscape. Edit the attached image ONLY to match a restrained NAVY BLUE AND CHAMPAGNE brand palette. Preserve the exact subject, composition, globe geography, airplane, open book, graduation cap, small clouds, distant architecture and curved ribbons, with all subjects on the RIGHT and the LEFT 57 percent quiet empty space for live webpage typography. Replace the orange/peach background with pale warm stone ivory #EBE3D6 to #F5F3EE. Change the saturated orange ribbons, tassel and warm architectural accents to muted champagne #C6A16A with subtle ivory highlights. Change vivid cyan/royal blue globe, graduation cap and airplane details to elegant deep navy #17324D, with gentle desaturated blue reflected light; preserve ivory continents and white airplane. The book should be warm ivory with neutral cream pages, not orange. Refined satin ceramic materials, soft daylight, subdued saturation, professional premium international education brand. The banner should feel light and calm, not dark. No text, lettering, numbers, logo, watermarks, interface elements or extra objects. Keep the source layout and wide aspect ratio. The result is one complete recolored image, not a comparison board.
+
 Generated with the built-in image_gen tool on 2026-10-01 and 2026-10-02.
 These are creative illustrations, not documentary photographs or representations of actual students.
 
